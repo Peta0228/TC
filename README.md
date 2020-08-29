@@ -2,9 +2,9 @@ Twitter Monitor Bot, Query and Alert
 
 ## Introduction
 
-The applicaiton can either serarch directly in twiiter(like the search bar in twitter); or search by accounts, and looking for specific keywords in tweets of the accounts found.
+The application can either search directly in twitter(like the search bar in twitter); or search by accounts, and looking for specific keywords in tweets of the accounts found.
 
-The script has strong reusablity, the application is able to query from twitter overtime, it is designed as an autorun process in system background.
+The script has strong re-usability, the application is able to query from twitter overtime, it is designed as an autorun process in system background.
 
 It also functions as a 'tweet monitor', which alerts will be sent by email when triggered by certain conditions in tweets queried
 
