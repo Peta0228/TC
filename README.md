@@ -6,6 +6,8 @@ The applicaiton can either serarch directly in twiiter(like the search bar in tw
 
 The script has strong reusablity, the application is able to query from twitter overtime, it is designed as an autorun process in system background.
 
+It also functions as a 'tweet monitor', which alerts will be sent by email when triggered by certian conditions in tweets queried
+
 ## Search by keyword -- PART 1
 
  - search by keyword in twitter; e.g., keyword: #CCT, ABBC, cat.
