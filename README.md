@@ -1,4 +1,4 @@
-Twitter Monitor Bot, Query and Alert
+# Twitter Monitor Bot, Query and Alert
 
 ## Introduction
 
@@ -6,7 +6,7 @@ The application can either search directly in twitter(like the search bar in twi
 
 The script has strong re-usability, the application is able to query from twitter overtime, it is designed as an autorun process in system background.
 
-It also functions as a 'tweet monitor', which alerts will be sent by email when triggered by certain conditions in tweets queried
+It also functions as a 'tweet monitor', which alerts will be sent by email when triggered by certain conditions in tweets queried.
 
 ## Search by keyword -- PART 1
 
