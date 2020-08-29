@@ -1,4 +1,4 @@
-# Twitter Crawler with MySql
+Twitter Monitor Bot, Query and Alert
 
 ## Introduction
 
