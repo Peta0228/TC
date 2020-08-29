@@ -6,14 +6,14 @@ The applicaiton can either serarch directly in twiiter(like the search bar in tw
 
 The script has strong reusablity, the application is able to query from twitter overtime, it is designed as an autorun process in system background.
 
-It also functions as a 'tweet monitor', which alerts will be sent by email when triggered by certian conditions in tweets queried
+It also functions as a 'tweet monitor', which alerts will be sent by email when triggered by certain conditions in tweets queried
 
 ## Search by keyword -- PART 1
 
  - search by keyword in twitter; e.g., keyword: #CCT, ABBC, cat.
  - the search behaves just like the search bar in twitter, returning tweets containing the keyword in reverse-chronological order (from newest to oldest)
- - if a tweet is a retweet, only the orginal tweet's text will be used (as the original tweet deemed to be more informative in general in search result) as the search result
- - filter the search results by three conditons: followers count of the tweet's account, favorite count of the tweet, and retweets count.
+ - if a tweet is a retweet, only the original tweet's text will be used (as the original tweet deemed to be more informative in general in search result) as the search result
+ - filter the search results by three conditions: followers count of the tweet's account, favorite count of the tweet, and retweets count.
  - push each keyword's search results into a separate database, 
 
 ## Search by account-keyword -- PART 2
@@ -52,7 +52,7 @@ For PART 2, {id, tweet, likes, retweets, retweeted, date}
 Before running, ensure the following requirements are met in the system:
 
 -  Python 3
-- Python libraryies: pandas, numpy, tweepy, boto3, mysql.connector
+- Python libraries: pandas, numpy, tweepy, boto3, mysql.connector
 - a MySql database connection,whether locally/remote
 - an aws account, with an access Id/key pair; the access Id should have S3 access(if using aws RDS to create MySql db, should have RDS access as well) in aws IAM
 - an email account with smtp host and port known, (e.g., gmail: smtp_host = smtp.gmail.com, port = 587)
@@ -85,9 +85,9 @@ Before running, ensure the following requirements are met in the system:
 
 3. in **search_settings/key_list.csv**: fill the 1st column with keywords you would like to search in PART 1
 
-4. in **search_settings/account_list.csv**: fill the 2nd column with twitter account you woule like to search in PART 2, fill in the 1st column with the alias of 2nd column's corresponding field, which will be used as the title of email alert
+4. in **search_settings/account_list.csv**: fill the 2nd column with twitter account you would like to search in PART 2, fill in the 1st column with the alias of 2nd column's corresponding field, which will be used as the title of email alert
 
-5. in **search_settings/account_key_list.csv**: fill the 1st column with keys to look for in accoutns in PART 2, entries should be lowercase
+5. in **search_settings/account_key_list.csv**: fill the 1st column with keys to look for in accounts in PART 2, entries should be lowercase
 
 ## How to configure for windows
 
@@ -115,7 +115,7 @@ If errors, check program outputs.
 
 ## IMPORTANT NOTES
 
-- during the first run in the autorun process, the application needs to quey all historical tweets containing keywords which are dated from the `since` para specified in **config.py** in PART 1, and all histroical tweets from the accounts in PART 2; this may result a very long 1st run depending on the number of keywords and accounts specified in each part; but this first run initialization is necessary for future runs' consistency 
+- during the first run in the autorun process, the application needs to query all historical tweets containing keywords which are dated from the `since` para specified in **config.py** in PART 1, and all historical tweets from the accounts in PART 2; this may result a very long 1st run depending on the number of keywords and accounts specified in each part; but this first run initialization is necessary for future runs' consistency 
 
 - when using Gmail as smtp server, make sure to turn `Less secure app access` on, as this allows the app to use Gmai's SMTP host; [turn on here](https://myaccount.google.com/lesssecureapps)
 
